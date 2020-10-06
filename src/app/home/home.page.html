@@ -1,0 +1,86 @@
+<app-cabecera titulo="SGM Essbio"></app-cabecera>
+
+<ion-content>
+
+    <div class="carta">
+
+<ion-slides mode="ios" pager="ios" scrollbar="ios">
+  <ion-slide *ngFor="let slide of lista; let indice=index">
+    <ion-card class="tarjeta">
+      <ion-card-header>
+        <ion-card-title>{{ slide }}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        Pendiente: 10
+        Ejecutadas: 3
+        Descargadas: 15
+        Total: 28
+      </ion-card-content>
+    </ion-card>
+  </ion-slide>
+</ion-slides>
+<ion-card>
+    <ion-grid>
+        <ion-row>
+          <ion-col size="6" class="contenedor_col">
+            
+            <ion-button (click)="onClick()" fill="outline" color="primary" expand="block" class="boton">
+              <ul no-padding>
+                <li>
+                    <ion-icon slot="icon-only" name="menu" class="icono"></ion-icon>
+                </li>
+                <li>
+                    <h4>Boton 1</h4>
+                </li>
+              </ul>
+              
+              
+            </ion-button>
+          </ion-col>
+          <ion-col size="6" class="contenedor_col">
+            
+              <ion-button (click)="onClick()" fill="outline" color="primary" expand="block" class="boton">
+                <ul no-padding>
+                  <li>
+                      <ion-icon slot="icon-only" name="contact" class="icono"></ion-icon>
+                  </li>
+                  <li>
+                      <h4>Boton 2</h4>
+                  </li>
+                </ul>
+              </ion-button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-card>
+
+
+<ion-card padding>
+  <ion-list>
+    
+    <ion-item color="transparent" class="item">
+      <ion-button (click)="onClick()" fill="outline" color="primary" expand="block" class="boton2">
+        Click me
+      </ion-button>
+    </ion-item>
+    
+    <ion-item color="transparent" class="item">
+        <ion-button (click)="onClick()" fill="outline" color="primary" expand="block" class="boton2">
+          Click me
+        </ion-button>
+      </ion-item>
+      
+    <ion-item color="transparent" class="item">
+      <ion-button (click)="animar()" fill="outline" color="primary" expand="block" class="boton2">
+        Animar
+      </ion-button>
+    </ion-item>
+    
+  </ion-list>
+</ion-card>
+
+<div class="animame">
+</div>
+</div>
+
+</ion-content>

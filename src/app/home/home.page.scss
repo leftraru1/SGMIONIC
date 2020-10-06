@@ -1,0 +1,89 @@
+.welcome-card img {
+  max-height: 35vh;
+  overflow: hidden;
+}
+
+.icono {
+  font-size: 200%;
+}
+
+.tarjeta {
+  width: 90%;
+  height: 100%;
+}
+
+.contenedor_col {
+  height: 100%;
+  width: 90%;
+}
+
+.boton {
+  height: 100px;
+  width: 90%;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul{
+  margin: 0;
+}
+
+h4 {
+  margin-top: 0;
+}
+
+.boton .icono {
+  font-size: 400%;
+}
+
+.boton2 {
+  width: 100%;
+  height: 100%;
+}
+
+.item {
+  margin-bottom: 5px;
+}
+
+.animame {
+  width: 50px;
+  height: 50px;
+  padding: 20px;
+  background: blue;
+}
+
+.vanishIn {
+  animation-name: vanishIn;
+}
+
+@-webkit-keyframes vanishIn {
+  0% {
+    opacity: 0;
+    transform-origin: 50% 50%;
+    transform: scale(2, 2);
+    filter: blur(90px);
+  }
+  100% {
+    opacity: 1;
+    transform-origin: 50% 50%;
+    transform: scale(1, 1);
+    filter: blur(0px);
+  }
+}
+
+@keyframes vanishIn {
+  0% {
+    opacity: 0;
+    transform-origin: 50% 50%;
+    transform: scale(2, 2);
+    filter: blur(90px);
+  }
+  100% {
+    opacity: 1;
+    transform-origin: 50% 50%;
+    transform: scale(1, 1);
+    filter: blur(0px);
+  }
+}

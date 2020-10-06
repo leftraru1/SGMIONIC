@@ -1,0 +1,93 @@
+<link href="https://fonts.googleapis.com/css?family=Advent+Pro&display=swap" rel="stylesheet">
+
+    <div class="gradiente">
+
+      <ion-header no-border>
+        <ion-toolbar color="transparent">
+          <ion-button slot="end" fill="clear">
+              <ion-icon slot="icon-only" name="settings" color="light" class="ion-padding"></ion-icon>
+          </ion-button>
+        </ion-toolbar>
+      </ion-header>
+
+      <br><br><br><br><br><br><br><br>
+
+      <ion-content color="transparent">
+
+        <div>
+          
+          <ion-slide>
+
+                    <ion-col size="4">
+                      <img class="imagen_tam" src="../assets/imagenes/icono.png"/>
+                    </ion-col>
+                    <ion-col size="6" class="taman_card">
+                      <div>
+                        <h4>SGM</h4>
+                        <h5>Sietema Gestión Medidores</h5>
+                      </div>
+                      
+                    </ion-col>
+                                  
+          </ion-slide>
+
+          <br><br><br>
+
+          
+          <ion-slide >
+
+            <div class="taman_card" color="primary">
+
+              <ion-list class="radio" no-padding>
+
+                <ion-item>
+                    <ion-label position="floating">Código Operador</ion-label>
+                    <ion-input type="number"
+                               name="numero_op"
+                               required>
+                    </ion-input>
+                </ion-item>
+
+                <ion-item>
+                  <ion-label position="floating">Contraseña</ion-label>
+                            <ion-input type="password"
+                                       name="pass"
+                                       required>
+                            </ion-input>
+                </ion-item>
+                
+              </ion-list>
+              
+            </div>
+
+          </ion-slide>
+
+          <ion-slide>
+            <ion-button expand="block" fill="outline" color="light" class="taman_card" href='home'>
+              <!-- home está establecido en app-routing.module.ts -->
+              INICIAR SESIÓN
+            </ion-button>
+            
+          </ion-slide>
+
+        </div>
+
+      
+
+      
+
+      </ion-content>
+
+      
+
+    </div>
+
+<!-- <ion-footer no-border>
+  <div class="gradiente">
+  <ion-toolbar color="transparent">
+    <ion-title color="light" >Versión 2.0.4</ion-title>
+  </ion-toolbar>
+  </div>
+
+</ion-footer> -->
+
